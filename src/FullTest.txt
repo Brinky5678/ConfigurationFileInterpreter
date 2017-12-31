@@ -1,0 +1,49 @@
+// Example Configuration file that needs to be interpreted into the language of choice
+Vehicle: Horus2B
+  DryMass: 1500 //assumes SI Units
+  FuelMass: 200
+  ReferenceArea: 20
+  ReferenceLengthLon: 12
+  ReferenceLengthLat: 32
+  ReflectionCoeff: 0.2
+  SRParea: 50
+  InertiaTensor: [1000, 0   , 0;
+                  0   , 1000, 0;
+                  0   , 0   , 1000] //can handle matrices like this
+  InvInertiaTensor: [0.001, 0    , 0;
+                     0    , 0.001, 0;
+                     0    , 0    , 0.001]
+  //AerodynamicDatabase:
+  //Actuators:
+  //MissionSystem:
+  //GuidanceSystem:
+  //ControlSystem:
+  //NavigationSystem:
+  //InitialState:
+
+SolarSystem: GenericSolarSystemName
+  SPKkernel: de430 //uses SPK kernels for positioning of the selected bodies
+  Barycenter: SSB
+  Star: Sun
+  PlanetMoonBarycenter: EarthMoonBarycenter
+    Planet: Earth
+      Atmosphere: //Parameter should be the name of function, not given => No atmosphere!
+      Gravity: //If parameter or identifier is not given, assume central gravity!
+      Shape: //If parameter or identifier is not given, assume spherical shape!
+      Moon: Luna
+        Atmosphere:
+        Gravity:
+        Shape:
+
+//Can also be defined without a central barycenter and star!
+//SolarSystem: EarthSystem
+//  SPKkernal: de430
+//  PlanetMoonBarycenter: EarthMoonBarycenter
+//      Planet: Earth
+//        Atmosphere:
+//        Gravity:
+//        Shape:
+//      Moon: Luna
+//        Atmosphere:
+//        Gravity:
+//        Shape:

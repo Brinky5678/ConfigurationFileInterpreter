@@ -1,2 +1,8 @@
 // this should be a comment
 (){}***+++---!!====
+5
+5.1235
+1234.56789 5.6
+Moon
+Barycenter1
+class
