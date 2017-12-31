@@ -35,7 +35,7 @@ SolarSystem: GenericSolarSystemName
         Gravity:
         Shape:
 
-//Can also be defined without a central barycenter and star!
+//Can also be defined without a central barycenter and star, but only one PlanetMoonBarycenter!
 //SolarSystem: EarthSystem
 //  SPKkernal: de430
 //  PlanetMoonBarycenter: EarthMoonBarycenter
