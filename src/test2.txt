@@ -1,0 +1,1 @@
+this is a text file to see if the fucking readstring actually works, which I guess it doens't!

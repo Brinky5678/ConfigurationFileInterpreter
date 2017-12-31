@@ -1,0 +1,85 @@
+// Example Configuration file that needs to be interpreted into the language of choice
+Vehicle: Horus2B
+  DryMass: 1500 [kg]
+  FuelMass: 200 [kg]
+  ReferenceArea: 20 [m^2]
+  ReferenceLengthLon:
+  ReferenceLengthLat:
+  ReflectionCoeff:
+  SRParea:
+  InertiaTensor:
+  InvInertiaTensor:
+  //AerodynamicDatabase:
+  //Actuators:
+  //MissionSystem:
+  //GuidanceSystem:
+  //ControlSystem:
+  //NavigationSystem:
+  //InitialState:
+
+SolarSystem: GenericSolarSystemName
+  Barycenter: GSSB
+  Star: Star1
+    Parent: GSSB
+    Mass:
+    Radius:
+    Luminousity:
+    State:
+  PlanetMoonBarycenter: PlanetMoonBarycenter1
+    Parent: GSSB
+  Planet: Planet1
+    Parent: PlanetMoonBarycenter1
+    Mass:
+    Radius:
+    Albedo:
+    Atmosphere
+    Gravity:
+    Shape:
+    State:
+  Moon: Moon1
+    Parent: PlanetMoonBarycenter1
+    Mass:
+    Radius:
+    Albedo:
+    Atmosphere
+    Gravity:
+    Shape:
+    State:
+  Moon: Moon2
+    Parent: PlanetMoonBarycenter1
+    Mass:
+    Radius:
+    Albedo:
+    Atmosphere
+    Gravity:
+    Shape:
+    State:
+  PlanetMoonBarycenter: PlanetMoonBarycenter2
+    Parent: GSSB
+  Planet: Planet2
+    Parent: PlanetMoonBarycenter2
+    Mass:
+    Radius:
+    Albedo:
+    Atmosphere
+    Gravity:
+    Shape:
+    State:
+  Moon: Moon3
+    Parent: PlanetMoonBarycenter2
+    Mass:
+    Radius:
+    Albedo:
+    Atmosphere
+    Gravity:
+    Shape:
+    State:
+  Moon: Moon4
+    Parent: PlanetMoonBarycenter2
+    Mass:
+    Radius:
+    Albedo:
+    Atmosphere
+    Gravity:
+    Shape:
+    State:
